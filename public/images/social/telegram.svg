@@ -1,0 +1,7 @@
+<svg id="telegram" xmlns="http://www.w3.org/2000/svg" width="219" height="44" viewBox="0 0 219 44">
+  <g id="Group_7" data-name="Group 7" transform="translate(-29 -128)">
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="219" height="44" rx="4" transform="translate(29 128)" fill="#039be5"/>
+    <text id="Share_with_Telegram" data-name="Share with Telegram" transform="translate(77 156)" fill="#fff" font-size="15" font-family="OpenSans-Regular, Open Sans" style="mix-blend-mode: lighten;isolation: isolate"><tspan x="0" y="0">Share with Telegram</tspan></text>
+    <path id="telegram-2" data-name="telegram" d="M7.06,11.883l-.3,4.187a1.041,1.041,0,0,0,.831-.4l2-1.908,4.137,3.03c.759.423,1.293.2,1.5-.7L17.942,3.365h0c.241-1.122-.406-1.56-1.145-1.285L.835,8.191C-.254,8.614-.238,9.221.65,9.5l4.081,1.269L14.21,4.834c.446-.3.852-.132.518.163Z" transform="translate(44 141)" fill="#fff"/>
+  </g>
+</svg>
