@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import RangeSlider from 'react-rangeslider'
+// import RangeSlider from 'react-rangeslider'
 
 
 function ProjectionView (props){
@@ -26,7 +26,7 @@ function ProjectionView (props){
             <div className="inver_price">
                 <h4>Growth<span>{(range > 0) ? `$${(growth * range).toFixed(2)}` : `$${growth}` }</span></h4>
             </div>
-            <RangeSlider
+            {/* <RangeSlider
                 className="range-slider"
                 value={range}
                 onChange={setRange} 
@@ -34,7 +34,7 @@ function ProjectionView (props){
                 min={0} 
                 max={10}
                 step={2}
-            />
+            /> */}
         </div>
     )
 }

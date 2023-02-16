@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from 'react-rangeslider'
+// import Slider from 'react-rangeslider'
 import Modal from 'react-responsive-modal'
 import { priceFormat } from '../../utils/common'
 
@@ -15,14 +15,14 @@ function PricePopup (props) {
                 <h6>Min Price(0) - {props.filters.price_range > 0 ? priceFormat(props.filters.price_range): 'Max'}</h6>
                 {/* <p>The list price is {props.filters.price_range > 0 ? priceFormat(props.filters.price_range): ''}</p> */}
                 <div className="price-range-modal">
-                <Slider
+                {/* <Slider
                     className={'price-slider'}
                     min={0}
                     max={100000}
                     value={props.filters.price_range}
                     onChange={e => props.setPriceRange({ ...props.filters, 'price_range': e })}
                     orientation='horizontal'
-                />
+                /> */}
                 </div>
             </div>
         </Modal>

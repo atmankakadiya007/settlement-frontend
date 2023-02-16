@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Slider from 'react-rangeslider';
+// import Slider from 'react-rangeslider';
 import { states, propertyTypes } from '../../constants/data'
 
 const active = '#64c3ef'
@@ -166,14 +166,14 @@ function AdvancedFilter (props){
 								<div className="filter-block">
 									<div className="filter-block-left">
 										<label className="dropdown-advance-search-title">Price Range</label>
-										<Slider
+										{/* <Slider
 											min={0}
 											max={100000}
 											value={filters.price_range}
 											onChange={e => setFilters({ ...filters, 'price_range': e })}
 											orientation='horizontal'
 											style={styleInput}
-										/>
+										/> */}
 										<label className="slide-val">Price: $
 											<input type="text"  id="amount1" value={filters.price_range} className="slide-val" readOnly style={{ width:60 }}/>
 										</label>
@@ -202,28 +202,28 @@ function AdvancedFilter (props){
 									<div className="filter-block">
 										<div className="filter-block-left">
 											<label className="dropdown-advance-search-title">Rental Income(Yearly)</label>
-											<Slider
+											{/* <Slider
 												min={0}
 												max={5000}
 												value={filters.rental_income}
 												onChange={(e) => setFilters({...filters, 'rental_income' : e })}
 												orientation='horizontal'
 												style={styleInput}
-											/>
+											/> */}
 											<label className="slide-val">Rental Income: $
 												<input type="text"  id="amount1" value={filters.rental_income} className="slide-val" readOnly style={{ width:60 }}/>
 											</label>
 										</div> 
                 						<div className="filter-block-right">
 											<label className="dropdown-advance-search-title" id="">Project Growth(%)</label>
-											<Slider
+											{/* <Slider
 												min={0}
 												max={100}
 												value={filters.project_growth}
 												onChange={e => setFilters({...filters, 'project_growth': e })}
 												orientation='horizontal'
 												style={styleInput}
-											/>
+											/> */}
 											<label className="slide-val">Growth: 
 												<input type="text"  id="amount1" value={filters.project_growth} className="slide-val" readOnly style={{ width:60 }}/>%
 											</label>
@@ -231,28 +231,28 @@ function AdvancedFilter (props){
               							<div className="filter-block">
 											<div className="filter-block-left">
 												<label className="dropdown-advance-search-title">Median Price</label>	
-												<Slider
+												{/* <Slider
 													min={0}
 													max={5000}
 													value={filters.median_price}
 													onChange={e => setFilters({...filters, 'median_price': e })}
 													orientation='horizontal'
 													style={styleInput}
-												/>
+												/> */}
 												<label className="slide-val">Median Price: $
 													<input type="text"  id="amount1" value={filters.median_price} className="slide-val" readOnly style={{ width:60 }}/>
 												</label>
 											</div>
 											<div className="filter-block-right">
 												<label className="dropdown-advance-search-title">Underlist Price</label>		
-												<Slider
+												{/* <Slider
 													min={0}
 													max={5000}
 													value={filters.underlist_price}
 													onChange={(e) => setFilters({ ...filters, 'underlist_price' : e })}
 													orientation='horizontal'
 													style={styleInput}
-												/>
+												/> */}
 												<label className="slide-val">Underlist Price: $
 													<input type="text"  id="amount1" value={filters.underlist_price} className="slide-val" readOnly style={{width:60 }}/>
 												</label>
