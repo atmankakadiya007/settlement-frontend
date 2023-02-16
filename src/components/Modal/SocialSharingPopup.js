@@ -11,7 +11,9 @@ import {
 
 function SocialSharingPopup (props) {
 
-    const shareUrl = `https://searchnsettle.trigma.in//detail/${props.propertyId}`;
+    // const shareUrl = `https://searchnsettle.trigma.in//detail/${props.propertyId}`;
+    const shareUrl = `http://3.26.194.73:3002/detail/${props.propertyId}`;
+
     const title = 'Real Estate Property';
 
     return(

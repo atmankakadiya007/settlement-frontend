@@ -2,7 +2,12 @@
   "name": "realestateproject",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://searchnsettle.trigma.in",
+  "homepage": "http://3.26.194.73:3002/",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js"
+  },
   "dependencies": {
     "@babel/core": "7.9.0",
     "@stripe/react-stripe-js": "^1.2.2",
@@ -97,11 +102,6 @@
     "webpack-dev-server": "3.11.0",
     "webpack-manifest-plugin": "2.2.0",
     "workbox-webpack-plugin": "4.3.1"
-  },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
   },
   "eslintConfig": {
     "extends": "react-app"
