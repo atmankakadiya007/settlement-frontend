@@ -5,7 +5,7 @@ import Slider from '../components/Detail/DetailPageSlider'
 import SuburbStats from '../components/Detail/SuburbStats'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import { Line } from 'react-chartjs-2';
-// import RangeSlider from 'react-rangeslider'
+import RangeSlider from 'react-rangeslider'
 import NeighbourhoodStats from '../components/Detail/NeighbourhoodStats'
 import ProjectionView from '../components/Detail/ProjectionView'
 import GoogleMapReact from 'google-map-react';
@@ -511,7 +511,7 @@ const Detail = props => {
 			<section id="banner" className="detail-banner">
            		<div className="container-fluid">
 					{/* eslint-disable-next-line no-mixed-operators */}
-					{/* <Slider images={property_images.length && property_images || []}/> */}
+					<Slider images={property_images.length && property_images || []}/>
 				</div>
        		</section>
        		 
@@ -705,14 +705,14 @@ const Detail = props => {
 										<h4>Total Cash<span>{priceFormat(cash * range)}</span></h4>
 									</div>
 									{/* <img src="/images/in_slider.png"/> */}
-									{/* <RangeSlider
+									<RangeSlider
 										className="range-slider"
 										value={range}
 										onChange={setRange} 
 										labels={horizontalLabels} 
 										min={3} 
 										step={3}
-										max={12}/> */}
+										max={12}/>
 								</div>
 								<p className="subj_calu"><img src="/images/subject.png"/> "subject to calculation, <a href="#">click here</a> to know more"</p>
 							</div> 
