@@ -1,40 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import Header from './components/Common/Header';
-import Footer from './components/Common/Footer';
-import Routes from './Routes'
-import Notification from './components/Common/Notification'
-import { getPricingPackages } from './actions/common';
-import { connect } from 'react-redux';
-import { loadStripe } from "@stripe/stripe-js";
-import { Elements } from "@stripe/react-stripe-js";
-const stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_KEY}`);
+import logo from './logo.svg';
+import './App.css';
 
-function App(props) {
-  useEffect(() => {
-    props.getPackages();
-  }, [])
-
+function App() {
   return (
-    <>
-      <Elements stripe={stripePromise}>
-        <Header packages={props.packages} getPackages={props.getPackages} />
-        <div className="route-box">
-          <Routes packages={props.packages} />
-        </div>
-       <Footer packages={props.packages} getPackages={props.getPackages} />
-      </Elements>
-      <Notification />
-    </>
-  )
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
-const mapStateToProps = state => ({
-  packages: state.common.packages,
-})
-
-const mapDispatchToProps = dispatch => ({
-  getPackages: () => dispatch(getPricingPackages())
-})
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
