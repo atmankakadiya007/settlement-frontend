@@ -1,0 +1,371 @@
+.property-tab-list {
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
+    background: #fff;
+    border-radius: 6px;
+    padding: 0 40px;
+    margin: 0 0 15px;
+    position: relative;
+}
+
+.propery-tabs-box .nav {
+    margin: 0 0 35px;
+    border: none;
+}
+
+.propery-tabs-box .nav li a {
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: #495057;
+    border:none
+}
+
+.propery-tabs-box .nav li a.active {
+    color: #ff385c;
+    background: transparent;
+    border: none;
+}
+
+.propery-tabs-box .nav li {
+    margin-right: 15px;
+}
+
+.property-tab-list .box {
+    margin: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    min-height: 160px;
+}
+
+.property-tab-list .box h2,.property-tab-list .box span {
+    text-align: left;
+    margin: 0;
+}
+
+.property-tab-list .box h2 {
+    text-transform: capitalize;
+    font-size: 38px;
+    width: 100%;
+    margin: 0 0 5px;
+}
+
+.property-tab-list .box span {
+    color: var(--text);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.property-tab-list .box span p.badge {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    background: var(--pink);
+    border-radius: 50px;
+    color: #fff;
+    padding: 0px 18px;
+    line-height: normal;
+    font-size: 17px;
+    height: 28px;
+    justify-content: center;
+    margin-left: 30px;
+    position: relative;
+    top: 2px;
+}
+
+.property-tab-list .box.price h5 {
+    font-size: 21px;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.property-tab-list .box.price span {
+    color: #000;
+    font-size: 22px;
+}
+
+.property-tab-list .box.price div {
+    padding-right: 15px;
+}
+
+.property-tab-list .box.amenitie ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10%;
+    border: 2px solid #ededed;
+    border-top: 0;
+    border-bottom: 0;
+    align-items: center;
+}
+
+.property-tab-list .box.amenitie ul li {
+    text-align: center;
+}
+
+.property-tab-list .box.amenitie ul li p {
+    margin: 0;
+}
+
+.property-tab-list .box.head {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.property-tab-list .box.amenitie ul li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}
+
+.property-tab-list .offer {
+    position: absolute;
+    right: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    top: 0;
+}
+
+.property-tab-list .offer p {
+    text-transform: capitalize;
+    margin: 5px 10px 0;
+    font-size: 15px;
+}
+
+.property-tab-list .offer span {
+    text-transform: capitalize;
+    background: var(--pink);
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 15px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+@media (max-width: 560px) {
+
+.property-tab-list {padding: 0 15px;padding-top: 50px;}
+.property-tab-list .box h2 {font-size: 28px;}
+.property-tab-list .box {min-height: auto}
+.property-tab-list .box.amenitie {margin: 20px 0;}
+.property-tab-list .box.amenitie ul {padding: 0;border: none;}
+.property-tab-list .box.price {margin: 0 0 20px;}
+.property-tab-list .box.price h5 {font-size: 18px;}
+.property-tab-list .box.price span {font-size: 18px;}
+}
+
+/************* Buyer Dashboard ****************/
+.buyer-status,.buyer-collapse,.buyer-offer-section {
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px 40px;
+    margin: 0 0 15px;
+    position: relative;
+}
+
+.buyer-status ul li {
+    display: flex;
+    /* align-items: center; */
+}
+
+.buyer-status ul li div {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.buyer-status ul li h5,.buyer-status ul li span {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0;
+    padding: 0 0;
+}
+
+.buyer-status ul li span {
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    position: relative;
+    font-size: 17px;
+}
+
+.buyer-status ul li {
+    margin: 0 0 30px;
+}
+
+.buyer-status ul li span:before {content: '';left: -30px;width: 3px;height: 35px;position: absolute;background: #d0d0d0;top: 24px;}
+
+.buyer-status ul li span:after {content: '';position: absolute;left: -34px;width: 12px;height: 12px;background: #d0d0d0;border-radius: 50px;top: 8px;}
+
+.buyer-status ul li span.complete:after {
+    background: var(--pink);
+}
+
+.buyer-status ul li span.complete {
+    color: var(--pink);
+}
+
+.buyer-status ul li span.pending {
+    color: #179a17;
+}
+
+.buyer-status ul li span.pending:after {
+    background: #179a17;
+}
+
+.buyer-status ul li span.due:after {
+    background: #c4cc4a;
+}
+
+.buyer-status ul li span.due {
+    color: #c4cc4a;
+}
+
+.buyer-status ul li span.assigned {
+    color: #252394;
+}
+
+.buyer-status ul li span.assigned:after {
+    background: #252394;
+}
+
+.buyer-status ul li:last-child span:before {
+    display: none;
+}
+
+.buyer-status ul li:last-child{
+    margin: 0;
+}
+
+.review-request p {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid var(--text);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.buyer-collapse .card {
+    margin: 0 0 15px;
+}
+
+
+.buyer-collapse .card  .card-header {
+    padding: 10px 15px;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 0;
+}
+
+.buyer-collapse .card .card-header h2 {
+    display: flex;
+}
+
+.buyer-collapse .card .card-header h2 button {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    color: var(--back);
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.buyer-collapse .card .card-body {
+    padding: 0 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    color: var(--text);
+}
+
+.buyer-collapse .card .card-body ul li {
+    margin: 0 0 5px;
+}
+
+.buyer-collapse .card .card-body button.btn {
+    background: var(--pink);
+    margin: 15px 0 0;
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.buyer-offer-section .form-group label {
+    width: 100%;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.buyer-offer-section .form-group input.form-control {
+    height: 45px;
+    border-radius: 6px;
+}
+
+.buyer-offer-section .form-group span {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buyer-offer-section button {background: var(--pink);font-size: 15px;color: #fff;text-transform: capitalize;text-transform: uppercase;font-weight: 700;padding: 8px 25px;}
+
+.offer-button-box ul li button {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.offer-button-box ul li button.offer_history {
+    border: 1px solid  #ced4da;
+    background: transparent;
+    color: #b3b3b3;
+    margin-left: 15px;
+}
+
+.document-list .item {
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 35px;
+    position: relative;
+}
+
+.document-list .item h5 {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 5px;
+}
+
+.document-list .item p {
+    margin: 0;
+    font-size: 15px;
+    color: #989898;
+}
+
+.document-list .item:last-child {
+    border: none;
+    padding: 0;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.document-list .item .doc {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 30px;
+}

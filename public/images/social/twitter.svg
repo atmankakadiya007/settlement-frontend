@@ -1,0 +1,7 @@
+<svg id="twitter" xmlns="http://www.w3.org/2000/svg" width="219" height="44" viewBox="0 0 219 44">
+  <g id="Group_9" data-name="Group 9" transform="translate(-29 -235)">
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="219" height="44" rx="4" transform="translate(29 235)" fill="#03a9f4"/>
+    <text id="Share_with_Twitter" data-name="Share with Twitter" transform="translate(77 263)" fill="#fff" font-size="15" font-family="OpenSans-Regular, Open Sans" style="mix-blend-mode: lighten;isolation: isolate"><tspan x="0" y="0">Share with Twitter</tspan></text>
+    <path id="twitter-2" data-name="twitter" d="M15.911,49.53a6.8,6.8,0,0,1-1.88.515,3.244,3.244,0,0,0,1.435-1.8,6.519,6.519,0,0,1-2.068.79,3.262,3.262,0,0,0-5.643,2.231,3.359,3.359,0,0,0,.076.744,9.233,9.233,0,0,1-6.723-3.412,3.263,3.263,0,0,0,1,4.36,3.221,3.221,0,0,1-1.474-.4v.036A3.277,3.277,0,0,0,3.25,55.794a3.256,3.256,0,0,1-.855.107,2.884,2.884,0,0,1-.618-.056,3.293,3.293,0,0,0,3.048,2.272A6.554,6.554,0,0,1,.781,59.509,6.11,6.11,0,0,1,0,59.464a9.183,9.183,0,0,0,5,1.464,9.22,9.22,0,0,0,9.284-9.282c0-.144,0-.283-.012-.422A6.507,6.507,0,0,0,15.911,49.53Z" transform="translate(45 203)" fill="#fff"/>
+  </g>
+</svg>
